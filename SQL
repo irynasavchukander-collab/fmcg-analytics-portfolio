@@ -1,4 +1,4 @@
-
+git commit -m "Add SQL queries Q1-Q8 with findings"
 01_unprofitable_categories.sql
 =======================================================================================================
 -- FILE: 01_unprofitable_categories.sql
