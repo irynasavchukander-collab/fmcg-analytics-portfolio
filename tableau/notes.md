@@ -20,7 +20,7 @@
 - dashboard (sql 5).png - Dashboard comparing profitability between B2B and B2C segments. B2B shows higher avg margin (~22–24%), while B2C achieves better margin efficiency (profit per marketing $), despite lower avg margin (16%) and higher loss rate.
 - Segment Comprasion (sql 5).png - Bar chart comparing B2B and B2C segments by average discount, margin, and loss rate. Shows that B2B maintains higher margin (23.7%) and discount (16.1%) with minimal loss (1.4%), while B2C trades lower margin (16%) for smaller discounts (9.7%) but faces higher loss rate (7.3%)
 - value vs margin (sql 5).png - Scatter plot comparing B2B and B2C by avg order value and avg margin %. Shows B2B with higher AOV (~1450) and margin (~24%), while B2C has lower AOV (~450) and margin (~16%), both benchmarked against global avg margin (~20%).
-- dashboard (sql 6).png -
+- dashboard (sql 6).png - Dashboard comparing Distributor, Modern Trade, Online, and Wholesale channels by margin, loss rate, cost structure, and marketing ROI. Highlights Wholesale as most efficient (26.5% margin, $3.22 ROI, 0.5% loss), while Online is least efficient (12.8% margin, $0.68 ROI, 10.4% loss)
 -   
 
 - 
