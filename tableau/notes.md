@@ -1,4 +1,5 @@
 ## Screenshots Notes
+ ***Profitability*** 
 - categories table (sql 1).png - Comparative table of product categories by total orders, sales, and profit. Highlights that Household, Dairy & Breakfast, and Personal Care deliver high margins, while Beverages and Snacks remain medium-margin segments.
 - profit by category (sql 1).png - Bar chart comparing total profit across categories. Household ($832K, 23%), Personal Care ($777K, 26% margin), Dairy & Breakfast ($620K, 25% margin) show high margins, while Snacks ($555K, 18% margin) and Beverages ($524K, 11% margin) remain medium-margin.
 - Gross Sales by cat egory(sql 1).png - Bar chart showing gross sales across categories. Beverages lead with $4,420K (medium margin), followed by Household $3,739K, Personal Care $3,267K, Snacks $2,973K, and Dairy & Breakfast $2,681K. High-margin categories (Household, Personal Care, Dairy & Breakfast) generate strong revenue alongside profitability.
@@ -11,6 +12,7 @@
 - Distribution by risk group (sql 3).png - Table summarizing orders by risk flag. Shows 2.1% loss-making (–$11K profit) 10.8% risky margin ($1.57M profit) and 87.2% normal ($2.9M profit). Confirms that ~12% of orders fall below the 12% margin benchmark.
 - product profibility (sql 3).png -  Table comparing product categories and order types by gross sales and margin share. Highlights that “Healthy” orders dominate total margin, while high‑value and mid‑value risky segments contribute < 2% each. Confirms risk concentration in small‑volume, low‑margin orders.
 - scater plot Gross Sales vs Profit (risk_flag)(sql 3).png - Scatter plot mapping gross sales vs actual profit. Points grouped by risk flag (loss-making, risky margin, normal). Shows clear break-even and thresholds, highlighting that ~12% of orders fall into risky or loss-making zones despite contributing noticeable revenue.
+***Sellers and Channels***
 - dashboard (sql 4).png - Dashboard comparing sales reps by discount, margin, and revenue performance. Highlights 36 reps with 19.6% avg margin and 12.9% avg discount; identifies 5 discount abusers and visualizes gaps between top performers, volume drivers, and average reps.
 - Dsicount % vs Margin % per Rep (sql 4).png - discount_vs_margin_scatter.png - Scatter plot comparing reps by discount % vs margin %. Divided by avg margin (~19.5%) and avg discount (~13.0%), highlights clusters of top performers (green), volume drivers (blue), average performers (gray), and discount abusers (red).
 - average performer revenue vs margin (sql 4).png - Table comparing average performers by gap rank, margin rank, revenue rank, and loss rate. Highlights critical gaps (red) for some reps, showing that mid‑tier sellers face margin pressure with loss rates up to 7.3%.
@@ -24,6 +26,7 @@
 - loss rate by channel (sql 6).png - Bar chart comparing loss rates across Online, Modern Trade, Distribution, and Wholesale channels. Highlights Online as the weakest performer (10.4% loss rate, far above avg 3.58%), while Wholesale (0.5%) and Distribution (0.7%) maintain minimal losses.
 - Marketing ROI by channel (sql 6).png - Bar chart comparing profit per marketing dollar across Wholesale, Distribution, Modern Trade, and Online channels. Shows $1 break-even line: Wholesale ($3.22) and Distribution ($2.65) lead in ROI, Modern Trade ($1.42) slightly above break-even, while Online ($0.68) operates below profitability threshold.
 - cost structure by channel (sql 6) - Table comparing cost distribution across Distributor, Modern Trade, Online, and Wholesale channels. Shows Online with the highest shares (COGS 53.5%, Logistics 9.8%, Marketing 16.5%), while Wholesale maintains leaner cost structure (COGS 49.6%, Logistics 4.4%, Marketing 6.6%).
+***Seasonality and Trends***
 - dashboard (sql 7).png -
 - q-q changes profit (sql7).png - Bar chart showing quarter‑over‑quarter profit deltas from 2023 Q1 to 2025 Q4. Highlights alternating growth (blue) and decline (gray) periods, with break‑even line at zero profit. Notable swings: +31K in 2024 Q3 vs ‑16K in 2024 Q1.
 - revenue vs profit by Q (sql 7).png - Line chart comparing gross sales and total profit from 2023 Q1 to 2025 Q4. Shows both metrics moving in parallel, with profit consistently tracking revenue but staying below, benchmarked against avg profit line.
