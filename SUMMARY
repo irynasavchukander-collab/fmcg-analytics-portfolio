@@ -1,0 +1,251 @@
+# Project Summary
+## FMCG Sales & Profitability Analytics
+
+**18,240 orders · 17 countries · 3 years (2023–2025)**
+**Tools: BigQuery SQL · Tableau · Python**
+
+---
+
+## The Core Question
+
+> Where does profit actually come from —
+> and where is the business silently losing money?
+
+---
+
+## How We Answered It
+
+Each tool answered a different layer of the same question:
+
+```
+SQL      - found the patterns
+           "Online ROI = $0.68, Beverages margin = 12–17%"
+
+Tableau  - made patterns visible and actionable
+           Interactive dashboards for stakeholder decisions
+
+Python   - proved patterns are statistically real
+           and revealed the root cause
+```
+
+This cross-tool approach mirrors real analytics teams
+where SQL, BI, and data science work the same problem
+from different angles - and either confirm or challenge
+each other's findings.
+
+---
+
+## Five Key Findings
+
+---
+
+### Finding 1 — COGS is the #1 profit driver
+
+**Confirmed independently by all three tools:**
+
+| Tool | Evidence |
+|------|----------|
+| SQL Q6 | COGS = 49–53% of gross sales across all channels |
+| SQL Q5 | B2C COGS share 52.65% > B2B 49.59% |
+| Python ML | COGS feature importance = 75.8% of profit variance |
+
+Top 2 features (COGS + Product Category) explain **87.2%**
+of all profit variation. Everything else — discounts,
+channel, promotions, seasonality — explains only 12.8%.
+
+**What this means for the business:**
+Optimising discount levels or promotional mechanics
+will not meaningfully move profitability.
+The primary lever is supplier cost negotiation.
+
+**Action:** Renegotiate supplier contracts.
+3% COGS reduction across all categories
+≈ **+$500K additional annual profit.**
+
+---
+
+### Finding 2 — Product category matters 76× more than channel
+
+| Tool | Evidence |
+|------|----------|
+| SQL Q8 | Personal Care margin 27–30% vs Beverages 12–17% |
+| SQL Q6 | Channel margin spread: 12.78%–26.48% |
+| Python ML | Category importance 0.1138 vs Channel 0.0015 |
+
+A sales rep selling Personal Care through Online
+outperforms a rep selling Beverages through Wholesale.
+**What you sell matters more than where you sell it.**
+
+**Action:** Shift sales mix toward Personal Care
+and Household. Adjust sales team incentives to reflect
+category margin contribution, not just revenue volume.
+
+---
+
+### Finding 3 — Promotions reduce profit across every segment
+
+**Confirmed by all three tools:**
+
+| Tool | Evidence |
+|------|----------|
+| Marketing ROI | No Promo ROI $3.17 vs Festival Campaign $1.23 |
+| A/B Test | Median gap = $29.08/order (p = 6.57e-53) |
+| Python ML | is_promo importance = 0.002 (<1% of variance) |
+
+Promotions are statistically confirmed to reduce profit
+(A/B test) but are not the main driver of variance (ML).
+The nuance: **promotions are a symptom, not the disease.**
+The disease is COGS.
+
+**Per-channel A/B results:**
+
+| Channel | Effect (Cohen's d) | Verdict |
+|---------|-------------------|---------|
+| Online | 0.450 (medium) | Most damaged |
+| Wholesale | 0.357 (small) | Significant |
+| Modern Trade | 0.351 (small) | Significant |
+| Distributor | 0.326 (small) | Significant |
+
+**Only worthwhile campaign: Loyalty Cashback** (ROI $3.09)
+— closest to No Promo performance, lowest loss rate (2.15%).
+
+**Action:** Eliminate Festival Campaign immediately.
+Shift freed budget to Loyalty Cashback.
+Zero promotional spend on Online and Beverages.
+
+**Estimated impact:** $273K–$404K annual profit gain
+(Bootstrap 95% CI: $23.76–$35.18 per order × 11,499 promo orders).
+
+---
+
+### Finding 4 — B2B outperforms B2C on 8 out of 9 metrics
+
+| Metric | B2B | B2C | Gap |
+|--------|-----|-----|-----|
+| Total profit | $2.67M | $636K | 4.2× |
+| Avg margin | 23.69% | 16.01% | +7.68pp |
+| Marketing/profit ratio | 39.3% | 80.69% | 2× more expensive |
+| Loss rate | 1.4% | 7.3% | 5× higher risk |
+| Avg order value | $1,432 | $435 | 3.3× larger |
+
+B2C spends **80 cents of marketing per $1 of profit.**
+B2B spends 39 cents — twice as efficient.
+
+**Important nuance:** B2C should not be abandoned.
+It provides market breadth, brand visibility, and a pipeline
+for potential B2B conversion. Goal: optimise, not eliminate.
+
+**Action:** Protect B2B as priority segment.
+Investigate B2C 7.3% loss rate by category and channel.
+Set minimum margin floor for B2C orders.
+
+---
+
+### Finding 5 — Beverages is structurally unprofitable
+
+The only finding confirmed strongly by all three tools
+**in the same direction:**
+
+| Tool | Evidence |
+|------|----------|
+| SQL Q8 | Margin 12–17%, no month is safe for promotion |
+| A/B Test | Strongest promo damage by category (d = 0.290) |
+| Python ML | Worst predicted category for Q1 2026 |
+
+No Promo Beverages median = $79.47.
+Promo Beverages median = $44.69.
+**Promotions cut Beverages profit by 44%.**
+
+Unlike seasonal underperformance (which can be timed around),
+Beverages underperforms consistently regardless of month,
+channel, promotion type, or customer segment.
+
+**Three options:**
+
+| Option | Action | Condition |
+|--------|--------|-----------|
+| A | Reprice + 8–10% | If demand is price-inelastic |
+| B | Remove lowest-margin SKUs | If assortment can be reduced |
+| C | Restrict to Wholesale/Distributor only | If channel mix drives losses |
+
+---
+
+## One Finding That Surprised Us
+
+**Seasonality barely matters per order — but matters a lot for planning.**
+
+SQL Q7 and Q8 clearly show Q2 always underperforms
+and categories have distinct peak months.
+Yet in the ML model, Month + Quarter + Year combined
+explain less than **0.4%** of profit variance per order.
+
+**Explanation:** Seasonality drives demand volume —
+how many orders you get. But whether each order
+is profitable depends on COGS and category, not timing.
+
+**Practical split:**
+- Use SQL Q7/Q8 for **inventory and marketing calendar planning**
+- Use ML model for **per-order profitability optimisation**
+
+---
+
+## Priority Action Plan
+
+| # | Action | Impact | When |
+|---|--------|--------|------|
+| 🔴 1 | COGS renegotiation with suppliers | ~$500K/year | Q1 2026 |
+| 🔴 2 | Eliminate Festival Campaign | ~$334K/year | Immediately |
+| 🔴 3 | Online: zero promo + min order value | −10.4% loss rate | Q1 2026 |
+| 🟡 4 | Beverages reprice or SKU cleanup | +5–8pp margin | Q1–Q2 2026 |
+| 🟡 5 | B2C margin floor policy | Target loss rate < 3% | Q2 2026 |
+| 🟢 6 | Scale Loyalty Cashback | Replace Festival budget | Q2 2026 |
+| 🟢 7 | B2B retention programme | Protect $2.67M base | Q2–Q3 2026 |
+
+**Combined P1–P3 potential: $834K+ additional annual profit**
+
+---
+
+## Cross-Tool Validation Scorecard
+
+| Finding | SQL | A/B Test | ML | Verdict |
+|---------|-----|----------|----|---------|
+| COGS dominates | Q5, Q6  | — | 75.8%  | Confirmed |
+| Category > Channel | Q8  | — | 76×  | Confirmed |
+| Promos reduce profit | Q3  | p=6.57e-53  | < 1%  | Confirmed |
+| B2B > B2C | Q5  | d=0.207  | — | Confirmed |
+| Online underperforms | Q6  | d=0.450  | — | Confirmed |
+| Beverages critical | Q8  | d=0.290  | Worst Q1  | Confirmed |
+| Q2 seasonality | Q7  | — | <0.4%  | Partial |
+
+---
+
+## Further Analysis Recommended
+
+**With SKU-level data:**
+Individual Beverages SKU profitability analysis.
+Identify which specific products drive category losses.
+
+**With Customer_ID data:**
+B2C to B2B conversion rate analysis.
+Customer lifetime value by acquisition channel.
+
+**With price history data:**
+Price elasticity estimation for Beverages repricing.
+Impact modelling for Online minimum order value policy.
+
+---
+
+## Project Navigation
+
+| Document | Contents |
+|----------|----------|
+| [README.md](README.md) | Technical documentation, how to run |
+| [sql/findings.md](sql/findings.md) | SQL query results and insights |
+| [python/findings.md](python/findings.md) | Statistical and ML findings |
+| [tableau/dashboard_links.md](tableau/dashboard_links.md) | Interactive dashboards |
+| [images/](images/) | All visualisations with annotations |
+
+---
+
+*Iryna Savchuk · Data Analyst*
+*[LinkedIn](#) · [Tableau Public](#) · [GitHub](#)*
