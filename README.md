@@ -11,8 +11,8 @@ End-to-end FMCG analytics: SQL + Tableau + Python
 ```
 fmcg-analytics-portfolio/
 │
-├── README.md                        ← you are here
-├── SUMMARY.md                       ← business findings
+├── README.md                        ←
+├── SUMMARY.md                       
 │
 ├── sql/
 │   ├── 01_unprofitable_categories.sql
@@ -31,12 +31,11 @@ fmcg-analytics-portfolio/
 │   ├── forecasting.ipynb
 │   └── findings.md
 │
-├── images/
-│   ├── tableau/
-    └── note.md
 │
 └── tableau/
+    ├── screen
     └── dashboard_links.md
+    └── note.md
 ```
 
 ---
