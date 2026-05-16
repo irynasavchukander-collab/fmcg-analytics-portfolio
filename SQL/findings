@@ -1,0 +1,211 @@
+## Q1: Which categories are loss-making after all costs?
+
+
+| Category | Avg Margin | Status |
+|----------|------------|--------|
+| Personal Care | 27–30% | Healthy |
+| Dairy & Breakfast | 24–29% |  Healthy |
+| Household | 22–28% |  Healthy |
+| Snacks | 18–23% |  Monitor |
+| Beverages | 11–17% |  Critical |
+
+**Insight:** Beverages is the only category where even
+peak months fall below the 20% margin threshold.
+All other categories maintain healthy margins.
+
+**Recommendation:** Reprice Beverages +8–10% or remove
+lowest-margin SKUs before any promotional investment.
+
+## Q2: Why do some countries have low margin?
+
+
+
+**Key finding:** All underperforming countries share
+one root cause — COGS represents 49–53% of gross sales.
+Logistics and marketing are secondary issues.
+
+**Auto-diagnosis result:**
+- COGS-heavy countries - renegotiate supplier contracts
+- Logistics-heavy countries -review delivery partners
+- Marketing-heavy countries  -audit campaign ROI
+
+**Recommendation:** Country-level action depends on
+which cost driver dominates — the query identifies
+this automatically per country.
+
+## Q3: Which large orders are secretly loss-making?
+
+
+
+| Risk Group | Share | Avg Margin | Key Pattern |
+|------------|-------|------------|-------------|
+| Loss-making | 2.1% | −6.34% | Wholesale + Flash Discount |
+| Risky margin | 32.9% | 4–11% | All channels affected |
+| Normal | 65% | 20%+ | Healthy baseline |
+
+**Key insight:** Loss-making orders appear across ALL
+revenue ranges ($500–$10K). A large gross sales figure
+does not protect against losses — discounts and
+logistics costs erode margin regardless of order size.
+
+**Most dangerous combination:**
+Wholesale channel + Flash Discount promotion
+- highest concentration of loss-making orders.
+
+**Recommendation:** Set minimum 12% margin floor
+for all promotional orders above $500.
+Review Flash Discount mechanics in Wholesale channel.
+
+## Q4: Who generates profit vs just revenue?
+
+
+**Most overrated rep:**
+Charlotte Ellis — #2 by revenue, #20 by margin
+(rank_gap = −18)
+
+**Most underrated rep:**
+Camila Torres — #1 by margin (21.37%), #25 by revenue
+(rank_gap = +24)
+
+**Profile distribution:**
+
+| Profile | Count | Avg Margin |
+|---------|-------|------------|
+| Top performer | ~9 | 20–21% |
+| Volume driver | ~12 | 20–21% |
+| Average performer | ~11 | 16–19% |
+| Discount abuser | 4 | 16–17% |
+
+**Global benchmarks:**
+avg_discount = 12.94% · avg_margin = 19.64%
+
+**Key insight:** Top revenue reps are not top margin reps.
+KPI structure rewards volume over profitability,
+creating a systematic misalignment.
+
+**Recommendation:** Add margin target alongside revenue
+target for all sales reps. Investigate and replicate
+Camila Torres' approach across the team.
+
+
+## Q5: Which customer segment is more profitable?
+
+
+
+| Metric | B2B | B2C | Winner |
+|--------|-----|-----|--------|
+| Total orders | 9,163 | 9,077 | Draw |
+| Avg order value | $1,432 | $435 | B2B |
+| Total profit | $2.67M | $636K | B2B |
+| Avg margin | 23.69% | 16.01% | B2B |
+| Marketing/profit | 39.3% | 80.69% | B2B |
+| Loss rate | 1.4% | 7.3% | B2B |
+| Margin/discount unit | 1.47 | 1.65 | B2C |
+
+**Score: B2B wins 8 out of 9 metrics**
+
+**Key insight:** B2B generates 4.2× more profit than B2C
+with nearly equal order volumes. B2C spends 80 cents
+of marketing per $1 of profit — twice as expensive as B2B.
+
+**Key nuance:** B2C loss rate is 5× higher than B2B.
+Most of the B2C disadvantage comes from structural cost
+issues, not from the segment itself.
+
+**Recommendation:** Protect B2B as priority segment.
+Audit B2C loss orders by category and channel.
+Do not abandon B2C — optimise cost structure first.
+
+ ## Q6: Which channel is most efficient after all costs?
+
+
+
+| Channel | Margin | ROI | Loss Rate | Rank |
+|---------|--------|-----|-----------|------|
+| Wholesale | 26.48% | $3.22 | 0.5% | #1  |
+| Distributor | 25.46% | $2.65 | 0.7% | #2  |
+| Modern Trade | 19.91% | $1.42 | 2.7% | #3  |
+| Online | 12.78% | $0.68 | 10.4% | #4  |
+
+**All 4 channels are COGS-heavy (49–53%)**
+This is a systemic business issue, not a channel issue.
+
+**Critical finding — Online:**
+Every $1 of Online marketing spend returns only $0.68
+in profit — below the $1.00 break-even threshold.
+Online loss rate (10.4%) is 20× higher than Wholesale.
+
+**Wholesale + Distributor = 74.6% of total profit**
+combined from roughly equal order volumes.
+
+**Recommendation:** Zero promotional budget for Online.
+Set minimum order value to offset 9.82% logistics burden.
+Reallocate freed budget to Wholesale and Distributor.
+
+*Statistically validated: ANOVA F=3,989, p≈0.00
+confirms channel ROI differences are not random.*
+
+## Q7: Do revenue peaks align with profit peaks?
+
+
+
+**Key divergence — 2025 Q2:**
+Highest gross sales of all 12 quarters (#1 by revenue)
+but only #3 by profit. rank_gap = −2.
+
+**Best quarter — 2024 Q4:**
+#3 by revenue but #1 by profit ($297,694).
+Low discount (12.79%) + strong margin (23.61%).
+
+**Q2 pattern — consistent underperformance:**
+
+| Year | Q2 QoQ delta | vs Q1 |
+|------|-------------|-------|
+| 2023 | −$14,997 | Low |
+| 2024 | −$16,669 | Low |
+| 2025 | −$842 | Low |
+
+**Warning signal — 2025 Q4:**
+Only quarter with negative YoY delta (−$11,765).
+All other 11 quarters showed YoY growth.
+
+**Key insight:** Discount levels are stable across
+all quarters (12.67–13.24%). Profit variation is driven
+by demand mix and channel mix — not by promotions.
+
+**Recommendation:** Plan Q2 demand stimulation proactively.
+Investigate 2025 Q4 decline before 2026 planning.
+Replace gross revenue with margin-adjusted profit
+as the primary quarterly KPI.
+## Q8: When should each category be promoted?
+
+
+
+**Categories do NOT peak simultaneously.**
+
+| Category | Peak Months | Low Season | Safe for Promo |
+|----------|------------|------------|----------------|
+| Personal Care | Jan, Dec | Feb, Jul | Jan, May–Jun, Aug |
+| Household | Apr–May, Jan | Jun–Jul | Apr, May, Dec |
+| Dairy | Jan, Mar | Apr, Nov | Feb, Mar, Dec |
+| Snacks | Nov→Dec* | Jun–Jul | Dec, Oct |
+| Beverages | Aug | Feb–Mar | None safe 🔴 |
+
+*Snacks seasonality shifted from Oct–Nov (2023–2024)
+to Jan–Dec (2025) -potential consumer behaviour change.
+
+**Beverages has no safe promotional window:**
+Every peak month is classified as
+"Risky— high volume low margin."
+Running promotions during peaks compounds the problem.
+
+**December = universal strong month:**
+4 out of 5 categories are Above average in December.
+Exception: Personal Care in December = Risky.
+Promote Snacks, Household, Dairy, Beverages in December.
+Use premium placement (not discounts) for Personal Care.
+
+**Recommendation:** Build a category-specific
+promotional calendar. Never run cross-category
+promotions simultaneously - peaks are staggered
+and one-size-fits-all campaigns destroy margin.
