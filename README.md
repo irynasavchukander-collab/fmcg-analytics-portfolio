@@ -33,7 +33,7 @@ fmcg-analytics-portfolio/
 │
 │
 └── tableau/
-    ├── screen
+    ├── screenshots
     └── dashboard_links.md
     └── note.md
 ```
@@ -250,4 +250,4 @@ R2=0.93 is the relevant metric for strategic-level forecasting
 ## Author
 
 **Iryna Savchuk** — Data Analyst
-[LinkedIn](#) · [Tableau Public](#) · [GitHub](#)
+[LinkedIn](#) · [Tableau Public](https://public.tableau.com/app/profile/iryna.savchuk/vizzes) 
