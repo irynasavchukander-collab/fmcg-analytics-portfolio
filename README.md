@@ -3,34 +3,7 @@ End-to-end FMCG analytics: SQL + Tableau + Python
 
 > **Core Question:** Where does profit actually come from —
 > and where is the business silently losing money?
-> Project Overview
-fmcg-analytics-portfolio/
-│
-├── README.md
-│
-├── sql/
-│   ├── 01_unprofitable_categories.sql
-│   ├── 02_country_cost_decomposition.sql
-│   ├── 03_loss_disguised_as_revenue.sql
-│   ├── 04_sales_reps_ranking.sql
-│   ├── 05_b2b_vs_b2c.sql
-│   ├── 06_channel_efficiency.sql
-│   ├── 07_quarterly_revenue_vs_profit.sql
-│   ├── 08_category_seasonality.sql
-│   └── findings.md
-│
-├── python/
-│   ├── marketing_roi.ipynb
-│   ├── ab_testing.ipynb
-│   ├── forecasting.ipynb
-│   └── findings.md
-│
-├── images/
-│   ├── dashboards/
-│   └── charts/
-│
-└── tableau/
-    └── dashboard_links.md
+
 
 
 ## Dataset
